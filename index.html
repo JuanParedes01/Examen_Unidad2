@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discografía</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="Recursos/estilo.css">
 </head>
 <body>
     <header class="header">
@@ -15,38 +15,95 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Empleados <i class="icon-abajo2"></i></a>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Registrar</a>
                     <ul class="submenu">
                         <li><a href="#">
-                            Juan
+                            Banda
                         </a></li>
                         <li><a href="#">
-                            Paco
+                            Albúm
                         </a></li>
                         <li><a href="#">
-                            Diana
+                            Canción
                         </a></li>
                     </ul>
                     </li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto <i class="icon-abajo2"></i></a>
-                    <ul class="submenu">
-                        <li><a href="#">
-                            Email
-                        </a></li>
-                        <li><a href="#">
-                            Mapa
-                        </a></li>
-                    </ul>
+                    <li><a href="#">Mostrar Información</a>
+                        <ul class="submenu">
+                            <li><a href="#">
+                                Albúm
+                            </a></li>
+                            <li><a href="#">
+                                Género
+                            </a></li>
+                        </ul>
                     </li>
-                    
+                    <li><a href="#">Buscar Canción Especifica</a></li>       
                 </ul>
             </nav>
         </div>
     </header>
- <!-- Portada   ------->
-     <div class="portada">
-     </div>
+    <div class="espacio">
+    </div>
+    <div class="fondo">
+        <div style="display: none;" id="Banda">
+            <div>
+                <label for="nombreB">Nombre</label>
+                <input type="text" id="nombreB" placeholder="Ingresar Nombre">
+            </div>
+            <div>
+                <label for="generoB">Género</label>
+                <input type="text" id="generoB" placeholder="Ingresar Género">
+            </div>
+            <div>
+                <label for="fundacionB">Año de Fundación</label>
+                <input type="number" id="fundacionB" placeholder="Ingresar Año" min="1900" max="2021">
+            </div>
+            <div hidden id="error">
+                Debes llenar todos los campos
+            </div>
+        </div>
+
+        <div style="display: none;" id="Album">
+            <div>
+                <label for="nombreA">Nombre</label>
+                <input type="text" id="nombreA" placeholder="Ingresar Nombre">
+            </div>
+            <div>
+                <label for="generoA">Género</label>
+                <select id="generoA">
+                    <option selected="true" disabled="disabled">Eliga la Banda</option>
+                </select>
+            </div>
+            <div>
+                <label for="lanzamientoA">Año de Lanzamiento</label>
+                <input type="number" id="lanzamientoA" placeholder="Ingresar Año" min="1900" max="2021">
+            </div>
+            <div hidden id="alert-error">
+                Debes llenar todos los campos
+            </div>
+        </div>
+
+        <div style="display: none;" id="Cancion">
+            <div>
+                <label for="albumC">Albúm</label>
+                <select id="albumC">
+                    <option selected="true" disabled="disabled">Eliga el Albúm</option>
+                </select>
+            </div>
+            <div>
+                <label for="nombreC">Nombre</label>
+                <input type="text" id="nombreC" placeholder="Ingresar Nombre">
+            </div>
+            <div>
+                <label for="duracionC">Duración</label>
+                <input type="text" id="duracionC" placeholder="Ingresar Duración" >
+            </div>
+            <div hidden id="alert-error">
+                Debes llenar todos los campos
+            </div>
+        </div>
+    </div>
 </body>
 </html>
