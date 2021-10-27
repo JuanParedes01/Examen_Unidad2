@@ -66,7 +66,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.fondo label{
+.fondo div label{
     color: white;
     font-size: 20px;
     background-color: #800000;
@@ -74,14 +74,21 @@ body{
     border-radius: 5px;
     border: 1px solid rgb(228, 91, 91);
 }
-.fondo input{
+.fondo div input{
     font-size: 20px;
     width: 200px;
     height: 25px;
     border-radius: 5px;
     border: 1px solid rgb(228, 91, 91);
 }
-.fondo select{
+.fondo div select{
+    font-size: 20px;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(228, 91, 91);
+}
+.fondo div button{
     font-size: 20px;
     width: 200px;
     height: 25px;

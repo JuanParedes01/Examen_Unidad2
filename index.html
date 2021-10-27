@@ -15,39 +15,41 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#" id="btnInicio">Inicio</a></li>
                     <li><a href="#">Registrar</a>
                     <ul class="submenu">
-                        <li><a href="#">
+                        <li><a href="#" id="btnBanda">
                             Banda
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="#" id="btnAlbum">
                             Albúm
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="#" id="btnCancion">
                             Canción
                         </a></li>
                     </ul>
                     </li>
                     <li><a href="#">Mostrar Información</a>
                         <ul class="submenu">
-                            <li><a href="#">
+                            <li><a href="#" id="btnMAlbum">
                                 Albúm
                             </a></li>
-                            <li><a href="#">
+                            <li><a href="#" id="btnMGenero">
                                 Género
                             </a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Buscar Canción Especifica</a></li>       
+                    <li><a href="#" id="btnBuscar">Buscar Canción Especifica</a></li>       
                 </ul>
             </nav>
         </div>
     </header>
+
     <div class="espacio">
     </div>
+
     <div class="fondo">
-        <div style="display: none;" id="Banda">
+        <div hidden="true" id="Banda">
             <div>
                 <label for="nombreB">Nombre</label>
                 <input type="text" id="nombreB" placeholder="Ingresar Nombre">
@@ -57,21 +59,22 @@
                 <input type="text" id="generoB" placeholder="Ingresar Género">
             </div>
             <div>
-                <label for="fundacionB">Año de Fundación</label>
-                <input type="number" id="fundacionB" placeholder="Ingresar Año" min="1900" max="2021">
+                <label for="añoB">Año de Fundación</label>
+                <input type="number" id="añoB" placeholder="Ingresar Año" min="1900" max="2021">
             </div>
-            <div hidden id="error">
-                Debes llenar todos los campos
+            <div hidden="true" id="error">
+                <label>Debes llenar todos los campos</label> 
             </div>
+            <button type="button" id="btnAñadirBanda">Añadir Banda</button>
         </div>
 
-        <div style="display: none;" id="Album">
+        <div hidden="true" id="Album">
             <div>
                 <label for="nombreA">Nombre</label>
                 <input type="text" id="nombreA" placeholder="Ingresar Nombre">
             </div>
             <div>
-                <label for="generoA">Género</label>
+                <label for="generoA">Banda</label>
                 <select id="generoA">
                     <option selected="true" disabled="disabled">Eliga la Banda</option>
                 </select>
@@ -85,7 +88,7 @@
             </div>
         </div>
 
-        <div style="display: none;" id="Cancion">
+        <div hidden="true" id="Cancion">
             <div>
                 <label for="albumC">Albúm</label>
                 <select id="albumC">
@@ -98,12 +101,40 @@
             </div>
             <div>
                 <label for="duracionC">Duración</label>
-                <input type="text" id="duracionC" placeholder="Ingresar Duración" >
+                <input type="text" id="duracionC" placeholder="Ingresar Duración">
             </div>
             <div hidden id="alert-error">
                 Debes llenar todos los campos
             </div>
         </div>
+
+        <div hidden="true" id="AlbumMostrar">
+            <div>
+                <label for="genero">Albúm</label>
+                <select id="genero">
+                    <option selected="true" disabled="disabled">Eliga el Albúm</option>
+                </select>
+            </div>
+        </div>
+
+        <div hidden="true" id="GeneroMostrar">
+            <div>
+                <label for="genero">Género</label>
+                <select id="genero">
+                    <option selected="true" disabled="disabled">Eliga el Género</option>
+                </select>
+            </div>
+        </div>
+
+        <div hidden="true" id="Buscar">
+            <div>
+                <label for="genero">Albúm</label>
+                <input type="search" placeholder="Buscar Canción">
+            </div>
+        </div>
+
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
