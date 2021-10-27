@@ -1,0 +1,47 @@
+body{
+	font-family: arial, helvetica;
+	background: #E3E5EB;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
+}
+
+.menu .submenu{
+    background: #fff;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.menu .submenu li a{
+    line-height: 50px;
+}
+
+.menu ul li a:hover + ul, .menu .submenu:hover{
+    display: block;
+}
+
